@@ -1,35 +1,23 @@
-import { View, Text, TouchableOpacity } from 'react-native';
-import React from 'react';
+import React, { useRef } from 'react';
+import { View } from 'react-native';
+import Video, { VideoRef } from 'react-native-video';
 
- export const Home = ({navigation}) => {
+export const Home = () => {
+  const videoRef = useRef<VideoRef>(null);
+
   return (
-    <View>
-      <Text>i am Home</Text>
-       <TouchableOpacity className="bg-[#00aaff] w-full py-3 rounded-full mb-6  mt-6"
-       onPress={()=>navigation.navigate('Signup')}>
-             <Text className="text-white text-center font-semibold text-base">
-               Sign up
-             </Text>
-           </TouchableOpacity>
-       <TouchableOpacity className="bg-[#00aaff] w-full py-3 rounded-full mb-6  mt-6"
-       onPress={()=>navigation.navigate('LogoutMenu')}>
-             <Text className="text-white text-center font-semibold text-base">
-               Menu
-             </Text>
-           </TouchableOpacity>
-       <TouchableOpacity className="bg-[#00aaff] w-full py-3 rounded-full mb-6  mt-6"
-       onPress={()=>navigation.navigate('ReviewScreen')}>
-             <Text className="text-white text-center font-semibold text-base">
-               Reiew Screen
-             </Text>
-           </TouchableOpacity>
-       <TouchableOpacity className="bg-[#00aaff] w-full py-3 rounded-full mb-6  mt-6"
-       onPress={()=>navigation.navigate('WriteReviewScreen')}>
-             <Text className="text-white text-center font-semibold text-base">
-            write Reiew Screen
-             </Text>
-           </TouchableOpacity>
+    <View className="flex-1 bg-black">
+      <Video
+        source={{ uri: 'https://www.w3schools.com/html/mov_bbb.mp4' }}
+        ref={videoRef}
+        className="w-full h-full"
+        resizeMode="cover"
+        repeat
+        muted
+        paused={false}
+        onError={(e) => console.log('Video error:', e)}
+        onLoad={() => console.log('Video loaded')}
+      />
     </View>
   );
 };
-
