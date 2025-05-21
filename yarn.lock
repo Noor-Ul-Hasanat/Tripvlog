@@ -1740,6 +1740,14 @@
     invariant "^2.2.4"
     nullthrows "^1.1.1"
 
+"@react-navigation/bottom-tabs@^7.3.13":
+  version "7.3.13"
+  resolved "https://registry.npmjs.org/@react-navigation/bottom-tabs/-/bottom-tabs-7.3.13.tgz"
+  integrity sha512-J3MWXBJc3y6hefZNRqdj/JD4nzIDLzZL5GIYj89pR6oRf2Iibz9t1qV7yzxEc1KOaNDkXVZ/5U16PArEJFfykQ==
+  dependencies:
+    "@react-navigation/elements" "^2.4.2"
+    color "^4.2.3"
+
 "@react-navigation/core@^7.9.2":
   version "7.9.2"
   resolved "https://registry.npmjs.org/@react-navigation/core/-/core-7.9.2.tgz"
@@ -2479,11 +2487,6 @@ body-parser@^1.20.3:
     type-is "~1.6.18"
     unpipe "1.0.0"
 
-boolbase@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/boolbase/-/boolbase-1.0.0.tgz"
-  integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
-
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz"
@@ -2910,30 +2913,6 @@ cross-spawn@^7.0.2, cross-spawn@^7.0.3, cross-spawn@^7.0.6:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-css-select@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.npmjs.org/css-select/-/css-select-5.1.0.tgz"
-  integrity sha512-nwoRF1rvRRnnCqqY7updORDsuqKzqYJ28+oSMaJMMgOauh3fvwHqMS7EZpIPqK8GL+g9mKxF1vP/ZjSeNjEVHg==
-  dependencies:
-    boolbase "^1.0.0"
-    css-what "^6.1.0"
-    domhandler "^5.0.2"
-    domutils "^3.0.1"
-    nth-check "^2.0.1"
-
-css-tree@^1.1.3:
-  version "1.1.3"
-  resolved "https://registry.npmjs.org/css-tree/-/css-tree-1.1.3.tgz"
-  integrity sha512-tRpdppF7TRazZrjJ6v3stzv93qxRcSsFmW6cX0Zm2NVKpxE1WV1HblnghVv9TreireHkqI/VDEsfolRF1p6y7Q==
-  dependencies:
-    mdn-data "2.0.14"
-    source-map "^0.6.1"
-
-css-what@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.npmjs.org/css-what/-/css-what-6.1.0.tgz"
-  integrity sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw==
-
 cssesc@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/cssesc/-/cssesc-3.0.0.tgz"
@@ -3110,36 +3089,6 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
-dom-serializer@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/dom-serializer/-/dom-serializer-2.0.0.tgz"
-  integrity sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg==
-  dependencies:
-    domelementtype "^2.3.0"
-    domhandler "^5.0.2"
-    entities "^4.2.0"
-
-domelementtype@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.npmjs.org/domelementtype/-/domelementtype-2.3.0.tgz"
-  integrity sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw==
-
-domhandler@^5.0.2, domhandler@^5.0.3:
-  version "5.0.3"
-  resolved "https://registry.npmjs.org/domhandler/-/domhandler-5.0.3.tgz"
-  integrity sha512-cgwlv/1iFQiFnU96XXgROh8xTeetsnJiDsTc7TYCLFd9+/WNkIqPTxiM/8pSd8VIrhXGTf1Ny1q1hquVqDJB5w==
-  dependencies:
-    domelementtype "^2.3.0"
-
-domutils@^3.0.1:
-  version "3.2.2"
-  resolved "https://registry.npmjs.org/domutils/-/domutils-3.2.2.tgz"
-  integrity sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==
-  dependencies:
-    dom-serializer "^2.0.0"
-    domelementtype "^2.3.0"
-    domhandler "^5.0.3"
-
 dunder-proto@^1.0.0, dunder-proto@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/dunder-proto/-/dunder-proto-1.0.1.tgz"
@@ -3188,11 +3137,6 @@ encodeurl@~2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/encodeurl/-/encodeurl-2.0.0.tgz"
   integrity sha512-Q0n9HRi4m6JuGIV1eFlmvJB7ZEVxu93IrMyiMsGC0lrMJMWzRgx6WGquyfQgZVb31vhGgXnfmPNNXmxnOkRBrg==
-
-entities@^4.2.0:
-  version "4.5.0"
-  resolved "https://registry.npmjs.org/entities/-/entities-4.5.0.tgz"
-  integrity sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==
 
 env-paths@^2.2.1:
   version "2.2.1"
@@ -5083,11 +5027,6 @@ math-intrinsics@^1.1.0:
   resolved "https://registry.npmjs.org/math-intrinsics/-/math-intrinsics-1.1.0.tgz"
   integrity sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==
 
-mdn-data@2.0.14:
-  version "2.0.14"
-  resolved "https://registry.npmjs.org/mdn-data/-/mdn-data-2.0.14.tgz"
-  integrity sha512-dn6wd0uw5GsdswPFfsgMp5NSB0/aDe6fK94YJV/AJDYXL6HVLWBsxeq7js7Ad+mU2K9LAlwpk6kN2D5mwCPVow==
-
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz"
@@ -5465,13 +5404,6 @@ npm-run-path@^4.0.1:
   integrity sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==
   dependencies:
     path-key "^3.0.0"
-
-nth-check@^2.0.1:
-  version "2.1.1"
-  resolved "https://registry.npmjs.org/nth-check/-/nth-check-2.1.1.tgz"
-  integrity sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==
-  dependencies:
-    boolbase "^1.0.0"
 
 nullthrows@^1.1.1:
   version "1.1.1"
@@ -5983,17 +5915,12 @@ react-native-css-interop@0.1.22:
     lightningcss "^1.27.0"
     semver "^7.6.3"
 
-react-native-feather@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.npmjs.org/react-native-feather/-/react-native-feather-1.1.2.tgz"
-  integrity sha512-qBc0+XegKkX4JV6ykgScasguEV3RdlbYp9IrCMnbozngOgJ7vi76pyRpb+dnZ1AZVkYsbYnpdA9JXeP7EJbMCA==
-
 react-native-is-edge-to-edge@1.1.7:
   version "1.1.7"
   resolved "https://registry.npmjs.org/react-native-is-edge-to-edge/-/react-native-is-edge-to-edge-1.1.7.tgz"
   integrity sha512-EH6i7E8epJGIcu7KpfXYXiV2JFIYITtq+rVS8uEb+92naMRBdxhTuS8Wn2Q7j9sqyO0B+Xbaaf9VdipIAmGW4w==
 
-react-native-reanimated@^3.17.5, react-native-reanimated@>=3.6.2:
+react-native-reanimated@>=3.6.2:
   version "3.17.5"
   resolved "https://registry.npmjs.org/react-native-reanimated/-/react-native-reanimated-3.17.5.tgz"
   integrity sha512-SxBK7wQfJ4UoWoJqQnmIC7ZjuNgVb9rcY5Xc67upXAFKftWg0rnkknTw6vgwnjRcvYThrjzUVti66XoZdDJGtw==
@@ -6024,15 +5951,6 @@ react-native-screens@^4.10.0, "react-native-screens@>= 4.0.0":
     react-freeze "^1.0.0"
     warn-once "^0.1.0"
 
-react-native-svg@>=5.3:
-  version "15.12.0"
-  resolved "https://registry.npmjs.org/react-native-svg/-/react-native-svg-15.12.0.tgz"
-  integrity sha512-iE25PxIJ6V0C6krReLquVw6R0QTsRTmEQc4K2Co3P6zsimU/jltcDBKYDy1h/5j9S/fqmMeXnpM+9LEWKJKI6A==
-  dependencies:
-    css-select "^5.1.0"
-    css-tree "^1.1.3"
-    warn-once "0.1.1"
-
 react-native-vector-icons@^10.2.0:
   version "10.2.0"
   resolved "https://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-10.2.0.tgz"
@@ -6041,12 +5959,7 @@ react-native-vector-icons@^10.2.0:
     prop-types "^15.7.2"
     yargs "^16.1.1"
 
-react-native-video@^6.14.0:
-  version "6.14.0"
-  resolved "https://registry.npmjs.org/react-native-video/-/react-native-video-6.14.0.tgz"
-  integrity sha512-a6hUlKr5KPZ3DBvNK95P917Sre1TH4Nvh4dVKLtKud26tHOWgYBDxBB2+vwsbLyy4fDfzQB5gac9QWaRs88Sug==
-
-react-native@*, react-native@>=0.46, react-native@0.79.2:
+react-native@*, react-native@0.79.2:
   version "0.79.2"
   resolved "https://registry.npmjs.org/react-native/-/react-native-0.79.2.tgz"
   integrity sha512-AnGzb56JvU5YCL7cAwg10+ewDquzvmgrMddiBM0GAWLwQM/6DJfGd2ZKrMuKKehHerpDDZgG+EY64gk3x3dEkw==
@@ -7099,7 +7012,7 @@ walker@^1.0.7, walker@^1.0.8:
   dependencies:
     makeerror "1.0.12"
 
-warn-once@^0.1.0, warn-once@^0.1.1, warn-once@0.1.1:
+warn-once@^0.1.0, warn-once@^0.1.1:
   version "0.1.1"
   resolved "https://registry.npmjs.org/warn-once/-/warn-once-0.1.1.tgz"
   integrity sha512-VkQZJbO8zVImzYFteBXvBOZEl1qL175WH8VmZcxF2fZAoudNhNDvHi+doCaAEdU2l2vtcIwa2zn0QK5+I1HQ3Q==

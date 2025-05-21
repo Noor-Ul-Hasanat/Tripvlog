@@ -16,7 +16,7 @@ export  const Boarding = ({ navigation })=> {
 
         <TouchableOpacity
           style={styles.button}
-          onPress={() => navigation.navigate('Home')}
+          onPress={() => navigation.navigate('Dashboard')}
         >
           <Text style={styles.buttonText}>Get Started</Text>
         </TouchableOpacity>
